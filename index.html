@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drag-and-Drop Table with Undo/Redo</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <button id="addRow">Add Row</button>
+        <button id="undo" disabled>Undo</button>
+        <button id="redo" disabled>Redo</button>
+
+        <table id="table">
+            <tbody>
+                <tr>
+                    <td><div class="box" id="box100" draggable="true" style="background-color: #FF5733;">100</div></td>
+                    <td><div class="box" id="box200" draggable="true" style="background-color: #33FF57;">200</div></td>
+                    <td><div class="box" id="box300" draggable="true" style="background-color: #3357FF;">300</div></td>
+                </tr>
+                <tr>
+                    <td><div class="box" id="box400" draggable="true" style="background-color: #FFC300;">400</div></td>
+                    <td><div class="box" id="box500" draggable="true" style="background-color: #FF33A1;">500</div></td>
+                    <td><div class="box" id="box600" draggable="true" style="background-color: #DAF7A6;">600</div></td>
+                </tr>
+                <tr>
+                    <td><div class="box" id="box700" draggable="true" style="background-color: #900C3F;">700</div></td>
+                    <td><div class="box" id="box800" draggable="true" style="background-color: #581845;">800</div></td>
+                    <td><div class="box" id="box900" draggable="true" style="background-color: #C70039;">900</div></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
